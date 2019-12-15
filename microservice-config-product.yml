@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev # ¼¤»î¿ª·¢»·¾³ÅäÖÃ
+    active: dev # æ¿€æ´»å¼€å‘ç¯å¢ƒé…ç½®
 ---
 server:
   port: 8001
@@ -9,13 +9,13 @@ mybatis:
   type-aliases-package: com.mengxuegu.springcloud.entities
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 spring:
-  profiles: dev # ¿ª·¢»·¾³
+  profiles: dev # å¼€å‘ç¯å¢ƒ
   application:
-    name: microservice-product-config # ******·şÎñÃû*******
+    name: microservice-product-config # ******æœåŠ¡å*******
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/springcloud_db01?serverTimezone=GMT%2B8 #Êı¾İ¿âÁ¬½ÓµØÖ·£¬*****×¢Òâ¿âÃû db01***************
+    url: jdbc:mysql://127.0.0.1:3306/springcloud_db01?serverTimezone=GMT%2B8 
     username: root
     password: root
     dbcp2:
@@ -40,13 +40,13 @@ mybatis:
   type-aliases-package: com.mengxuegu.springcloud.entities
   mapper-locations: classpath:mybatis/mapper/**/*.xml
 spring:
-  profiles: prod # Éú²ú»·¾³
+  profiles: prod # ç”Ÿäº§ç¯å¢ƒ
   application:
-    name: microservice-product-config # ******·şÎñÃû*******
+    name: microservice-product-config # ******æœåŠ¡å*******
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/springcloud_db02?serverTimezone=GMT%2B8 #Êı¾İ¿âÁ¬½ÓµØÖ·£¬*****×¢Òâ¿âÃû db02***************
+    url: jdbc:mysql://127.0.0.1:3306/springcloud_db02?serverTimezone=GMT%2B8
     username: root
     password: root
     dbcp2:
